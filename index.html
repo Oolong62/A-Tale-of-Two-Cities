@@ -8,10 +8,10 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts & Pretendard -->
+  <!-- Google Fonts (Cinzel, Playfair Display, Noto Serif KR) & Pretendard -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Noto+Serif+KR:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   
   <!-- Font Awesome Icons -->
@@ -22,18 +22,18 @@
 
   <style>
     :root {
-      --bg-deep: #070b12;
-      --bg-navy: #0d1624;
-      --gold-primary: #d4b982;
-      --gold-light: #f3e5ab;
+      --bg-deep: #070b14;
+      --bg-navy: #0d1526;
+      --gold-primary: #d4af37;
+      --gold-light: #e6c675;
       --gold-dark: #9a7b3e;
-      --card-bg: rgba(13, 21, 34, 0.82);
-      --border-gold: rgba(212, 185, 130, 0.25);
+      --card-bg: rgba(13, 21, 38, 0.85);
+      --border-gold: rgba(212, 175, 55, 0.28);
     }
 
     body {
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(ellipse at top right, #132238 0%, #090f19 50%, #05080e 100%);
+      background: radial-gradient(ellipse at top right, #142440 0%, #0a1120 48%, #070b14 100%);
       color: #f4f1ea;
       min-height: 100vh;
       overflow-x: hidden;
@@ -41,7 +41,7 @@
     }
 
     .font-serif-title {
-      font-family: 'Playfair Display', 'Noto Serif KR', serif;
+      font-family: 'Cinzel', 'Playfair Display', 'Noto Serif KR', serif;
     }
 
     .font-serif-kr {
@@ -65,14 +65,14 @@
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #070b12;
+      background: #070b14;
     }
     ::-webkit-scrollbar-thumb {
-      background: rgba(212, 185, 130, 0.35);
+      background: rgba(212, 175, 55, 0.35);
       border-radius: 9999px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: rgba(212, 185, 130, 0.6);
+      background: rgba(212, 175, 55, 0.65);
     }
 
     /* 글래스모피즘 패널 */
@@ -81,12 +81,12 @@
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border: 1px solid var(--border-gold);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.58);
     }
 
     /* 골드 그라데이션 텍스트 */
     .text-gold-gradient {
-      background: linear-gradient(135deg, #f3e5ab 0%, #d4b982 50%, #b39252 100%);
+      background: linear-gradient(135deg, #f5e2a3 0%, #e6c675 45%, #d4af37 80%, #aa8529 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -94,40 +94,40 @@
     /* 배우 선택 버튼 스타일 */
     .actor-btn {
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(212, 185, 130, 0.22);
+      border: 1px solid rgba(212, 175, 55, 0.24);
       background: rgba(255, 255, 255, 0.03);
       color: #d1d5db;
     }
     .actor-btn:hover {
-      border-color: rgba(212, 185, 130, 0.6);
-      background: rgba(212, 185, 130, 0.1);
+      border-color: rgba(230, 198, 117, 0.65);
+      background: rgba(212, 175, 55, 0.12);
       color: #fff;
     }
     .actor-btn.active {
-      background: linear-gradient(135deg, #d4b982 0%, #b69554 100%);
-      color: #090e17;
+      background: linear-gradient(135deg, #e6c675 0%, #d4af37 100%);
+      color: #070b14;
       font-weight: 700;
-      border-color: #f3e5ab;
-      box-shadow: 0 0 14px rgba(212, 185, 130, 0.4);
+      border-color: #f8e7b5;
+      box-shadow: 0 0 14px rgba(212, 175, 55, 0.42);
     }
 
     /* 토글 칩 스타일 */
     .filter-chip {
       transition: all 0.2s ease;
-      border: 1px solid rgba(212, 185, 130, 0.25);
-      background: rgba(15, 23, 38, 0.7);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      background: rgba(13, 21, 38, 0.75);
       color: #cbd5e1;
     }
     .filter-chip:hover {
-      border-color: #d4b982;
-      color: #f3e5ab;
+      border-color: #e6c675;
+      color: #f5e2a3;
     }
     .filter-chip.active {
-      background: rgba(212, 185, 130, 0.2);
-      border-color: #f3e5ab;
-      color: #f3e5ab;
+      background: rgba(212, 175, 55, 0.22);
+      border-color: #e6c675;
+      color: #f5e2a3;
       font-weight: 600;
-      box-shadow: inset 0 0 8px rgba(212, 185, 130, 0.25);
+      box-shadow: inset 0 0 8px rgba(212, 175, 55, 0.25);
     }
 
     /* 첫공 뱃지 (포스터 재현) */
@@ -137,23 +137,23 @@
       line-height: 1;
       padding: 2px 4px;
       border-radius: 3px;
-      background: linear-gradient(135deg, #e6c888, #b5914b);
-      color: #0b111c;
+      background: linear-gradient(135deg, #f0d78c, #c59b27);
+      color: #070b14;
       font-weight: 800;
       vertical-align: top;
-      margin-left: 2px;
+      margin-left: 3px;
       letter-spacing: -0.02em;
     }
 
     /* 선택된 배우 하이라이트 */
     .actor-highlight {
-      color: #f3e5ab;
+      color: #f8e7b5;
       font-weight: 700;
-      text-shadow: 0 0 10px rgba(243, 229, 171, 0.45);
-      background: rgba(212, 185, 130, 0.14);
+      text-shadow: 0 0 10px rgba(230, 198, 117, 0.45);
+      background: rgba(212, 175, 55, 0.16);
       padding: 2px 7px;
       border-radius: 6px;
-      border: 1px solid rgba(212, 185, 130, 0.35);
+      border: 1px solid rgba(230, 198, 117, 0.4);
     }
 
     /* 스케줄 행 hover 및 찜 상태 */
@@ -161,10 +161,10 @@
       transition: background-color 0.18s ease, transform 0.15s ease;
     }
     .schedule-row:hover {
-      background-color: rgba(212, 185, 130, 0.08);
+      background-color: rgba(212, 175, 55, 0.08);
     }
     .schedule-row.picked {
-      background-color: rgba(212, 185, 130, 0.13);
+      background-color: rgba(212, 175, 55, 0.15);
     }
 
     /* 토스트 알림 애니메이션 */
@@ -177,34 +177,38 @@
     }
   </style>
 </head>
-<body class="antialiased selection:bg-[#d4b982] selection:text-[#070b12]">
+<body class="antialiased selection:bg-[#d4af37] selection:text-[#070b14]">
 
   <!-- 밤하늘 별빛 캔버스 -->
   <canvas id="starfield"></canvas>
+
+  <!-- 좌측 포스터 수직 골드 프레임 모티프 -->
+  <div class="hidden xl:flex fixed left-0 top-0 bottom-0 w-16 z-0 pointer-events-none flex-col justify-between py-12 opacity-20">
+    <div class="h-2 w-12 bg-gradient-to-r from-[#d4af37] to-transparent rounded-r"></div>
+    <div class="h-3 w-16 bg-gradient-to-r from-[#e6c675] to-transparent rounded-r"></div>
+    <div class="h-1.5 w-10 bg-gradient-to-r from-[#d4af37] to-transparent rounded-r"></div>
+    <div class="h-4 w-14 bg-gradient-to-r from-[#e6c675] to-transparent rounded-r"></div>
+    <div class="h-2 w-12 bg-gradient-to-r from-[#d4af37] to-transparent rounded-r"></div>
+    <div class="h-3 w-16 bg-gradient-to-r from-[#e6c675] to-transparent rounded-r"></div>
+    <div class="h-1.5 w-9 bg-gradient-to-r from-[#d4af37] to-transparent rounded-r"></div>
+    <div class="h-2.5 w-14 bg-gradient-to-r from-[#e6c675] to-transparent rounded-r"></div>
+  </div>
 
   <!-- 메인 컨테이너 -->
   <div class="relative z-10 max-w-6xl mx-auto px-3 sm:px-6 py-6 sm:py-10">
 
     <!-- 상단 헤더 (포스터 오마주) -->
     <header class="text-center mb-8 sm:mb-10 relative">
-      <!-- 은은한 좌측 세로 장식선 (포스터 건축/빛 실루엣 오마주) -->
-      <div class="hidden md:block absolute left-4 top-0 bottom-0 w-16 opacity-20 pointer-events-none flex flex-col justify-between py-2">
-        <div class="h-1.5 w-12 bg-[#d4b982] rounded-r"></div>
-        <div class="h-2 w-16 bg-[#d4b982] rounded-r"></div>
-        <div class="h-1 w-10 bg-[#d4b982] rounded-r"></div>
-        <div class="h-2.5 w-14 bg-[#d4b982] rounded-r"></div>
-      </div>
-
-      <p class="font-serif-title tracking-[0.35em] text-xs sm:text-sm text-[#d4b982] uppercase mb-2 opacity-90">
+      <p class="font-serif-title tracking-[0.35em] text-xs sm:text-sm text-[#e6c675] uppercase mb-2 opacity-90">
         CASTING SCHEDULE &amp; MY PICK
       </p>
       <h1 class="font-serif-title text-2xl sm:text-4xl md:text-5xl font-bold tracking-wider text-gold-gradient mb-3">
         MUSICAL 두 도시 이야기 <span class="block sm:inline text-lg sm:text-3xl font-normal tracking-[0.2em] mt-1 sm:mt-0">- CAST PICK</span>
       </h1>
-      <div class="flex items-center justify-center gap-3 text-xs sm:text-sm text-slate-300/80">
-        <span class="h-[1px] w-8 sm:w-16 bg-gradient-to-r from-transparent to-[#d4b982]/60"></span>
-        <span>2026. 11. 11 (WED) — 2027. 02. 08 (MON)</span>
-        <span class="h-[1px] w-8 sm:w-16 bg-gradient-to-l from-transparent to-[#d4b982]/60"></span>
+      <div class="flex items-center justify-center gap-3 text-xs sm:text-sm text-slate-300/90">
+        <span class="h-[1px] w-8 sm:w-16 bg-gradient-to-r from-transparent to-[#d4af37]/70"></span>
+        <span class="font-medium tracking-wider">2026. 11. 11 (WED) — 2027. 02. 08 (MON)</span>
+        <span class="h-[1px] w-8 sm:w-16 bg-gradient-to-l from-transparent to-[#d4af37]/70"></span>
       </div>
     </header>
 
@@ -214,37 +218,37 @@
         
         <!-- 통계 카운터 -->
         <div class="grid grid-cols-3 gap-2 sm:gap-4 text-center sm:text-left">
-          <div class="bg-[#080d16]/70 border border-[#d4b982]/20 rounded-xl px-3 py-2.5">
+          <div class="bg-[#070b14]/75 border border-[#d4af37]/20 rounded-xl px-3 py-2.5">
             <div class="text-[11px] sm:text-xs text-slate-400">검색된 회차</div>
-            <div class="text-lg sm:text-2xl font-bold text-[#f3e5ab] font-serif-title">
+            <div class="text-lg sm:text-2xl font-bold text-[#e6c675] font-serif-title">
               <span id="stat-matched">0</span><span class="text-xs font-normal text-slate-400 ml-1">회</span>
             </div>
           </div>
-          <div class="bg-[#080d16]/70 border border-[#d4b982]/30 rounded-xl px-3 py-2.5 cursor-pointer hover:border-[#d4b982]" onclick="togglePickOnlyFilter()" title="클릭하여 내 찜 목록만 보기">
-            <div class="text-[11px] sm:text-xs text-[#d4b982] flex items-center justify-center sm:justify-start gap-1">
+          <div class="bg-[#070b14]/75 border border-[#d4af37]/35 rounded-xl px-3 py-2.5 cursor-pointer hover:border-[#e6c675]" onclick="togglePickOnlyFilter()" title="클릭하여 내 찜 목록만 보기">
+            <div class="text-[11px] sm:text-xs text-[#e6c675] flex items-center justify-center sm:justify-start gap-1">
               <i class="fa-solid fa-star text-[10px]"></i> 내 찜 회차
             </div>
             <div class="text-lg sm:text-2xl font-bold text-white font-serif-title">
               <span id="stat-picked">0</span><span class="text-xs font-normal text-slate-400 ml-1">회</span>
             </div>
           </div>
-          <div class="bg-[#080d16]/70 border border-[#d4b982]/20 rounded-xl px-3 py-2.5">
-            <div class="text-[11px] sm:text-xs text-slate-400">전체 공연</div>
+          <div class="bg-[#070b14]/75 border border-[#d4af37]/20 rounded-xl px-3 py-2.5">
+            <div class="text-[11px] sm:text-xs text-slate-400">공개된 공연</div>
             <div class="text-lg sm:text-2xl font-bold text-slate-200 font-serif-title">
-              69<span class="text-xs font-normal text-slate-400 ml-1">회</span>
+              <span id="stat-total-open">69</span><span class="text-xs font-normal text-slate-400 ml-1">회</span>
             </div>
           </div>
         </div>
 
         <!-- 유틸리티 버튼 그룹 -->
         <div class="flex flex-wrap items-center justify-center lg:justify-end gap-2">
-          <button onclick="openStatsModal()" class="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#131f33] hover:bg-[#1b2c47] text-[#f3e5ab] border border-[#d4b982]/30 transition flex items-center gap-1.5">
-            <i class="fa-solid fa-chart-simple text-[#d4b982]"></i> 출연 횟수 통계
+          <button onclick="openStatsModal()" class="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#121e33] hover:bg-[#1a2b47] text-[#e6c675] border border-[#d4af37]/30 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-chart-simple text-[#d4af37]"></i> 출연 횟수 통계
           </button>
-          <button onclick="copyPicksToClipboard()" class="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#131f33] hover:bg-[#1b2c47] text-slate-100 border border-[#d4b982]/30 transition flex items-center gap-1.5">
-            <i class="fa-regular fa-copy text-[#d4b982]"></i> 찜 텍스트 복사
+          <button onclick="copyPicksToClipboard()" class="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-[#121e33] hover:bg-[#1a2b47] text-slate-100 border border-[#d4af37]/30 transition flex items-center gap-1.5">
+            <i class="fa-regular fa-copy text-[#d4af37]"></i> 찜 텍스트 복사
           </button>
-          <button onclick="exportScheduleAsPNG()" class="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-[#d4b982] to-[#b5924c] hover:from-[#e6cc96] hover:to-[#c5a159] text-[#080d16] shadow-lg shadow-[#d4b982]/15 transition flex items-center gap-1.5">
+          <button onclick="exportScheduleAsPNG()" class="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-[#e6c675] to-[#c49b2c] hover:from-[#f2d68a] hover:to-[#d4af37] text-[#070b14] shadow-lg shadow-[#d4af37]/15 transition flex items-center gap-1.5">
             <i class="fa-solid fa-camera"></i> PNG 이미지 저장
           </button>
         </div>
@@ -254,12 +258,12 @@
 
     <!-- 필터 컨트롤 섹션 -->
     <section class="glass-panel rounded-2xl p-4 sm:p-6 mb-6">
-      <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-[#d4b982]/20">
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-[#d4af37]/20">
         <div class="flex items-center gap-2">
-          <i class="fa-solid fa-sliders text-[#d4b982]"></i>
-          <h2 class="font-serif-kr font-bold text-base sm:text-lg text-[#f3e5ab]">캐스트 &amp; 일정 필터</h2>
-          <span id="filter-mode-badge" class="text-[11px] px-2 py-0.5 rounded-full bg-[#d4b982]/15 text-[#d4b982] border border-[#d4b982]/30">
-            배역 간 교집합(AND) 매칭
+          <i class="fa-solid fa-sliders text-[#d4af37]"></i>
+          <h2 class="font-serif-kr font-bold text-base sm:text-lg text-[#e6c675]">캐스트 &amp; 일정 필터</h2>
+          <span class="text-[11px] px-2 py-0.5 rounded-full bg-[#d4af37]/15 text-[#e6c675] border border-[#d4af37]/30">
+            동일 배역 OR · 타 배역 AND 조합
           </span>
         </div>
         <div class="flex items-center gap-2">
@@ -272,8 +276,8 @@
       <!-- 5개 배역별 배우 선택 그리드 -->
       <div class="grid grid-cols-1 md:grid-cols-5 gap-3 sm:gap-4 mb-5">
         <!-- 시드니 칼튼 -->
-        <div class="bg-[#080d16]/60 rounded-xl p-3 border border-[#d4b982]/15">
-          <div class="text-xs font-semibold text-[#d4b982] mb-2 flex items-center justify-between">
+        <div class="bg-[#070b14]/65 rounded-xl p-3 border border-[#d4af37]/18">
+          <div class="text-xs font-semibold text-[#e6c675] mb-2 flex items-center justify-between">
             <span>시드니 칼튼</span>
             <span class="text-[10px] text-slate-400 font-normal">Sydney Carton</span>
           </div>
@@ -285,8 +289,8 @@
         </div>
 
         <!-- 찰스 다네이 -->
-        <div class="bg-[#080d16]/60 rounded-xl p-3 border border-[#d4b982]/15">
-          <div class="text-xs font-semibold text-[#d4b982] mb-2 flex items-center justify-between">
+        <div class="bg-[#070b14]/65 rounded-xl p-3 border border-[#d4af37]/18">
+          <div class="text-xs font-semibold text-[#e6c675] mb-2 flex items-center justify-between">
             <span>찰스 다네이</span>
             <span class="text-[10px] text-slate-400 font-normal">Charles Darnay</span>
           </div>
@@ -298,8 +302,8 @@
         </div>
 
         <!-- 루시 마네뜨 -->
-        <div class="bg-[#080d16]/60 rounded-xl p-3 border border-[#d4b982]/15">
-          <div class="text-xs font-semibold text-[#d4b982] mb-2 flex items-center justify-between">
+        <div class="bg-[#070b14]/65 rounded-xl p-3 border border-[#d4af37]/18">
+          <div class="text-xs font-semibold text-[#e6c675] mb-2 flex items-center justify-between">
             <span>루시 마네뜨</span>
             <span class="text-[10px] text-slate-400 font-normal">Lucie Manette</span>
           </div>
@@ -311,8 +315,8 @@
         </div>
 
         <!-- 마담 드파르주 -->
-        <div class="bg-[#080d16]/60 rounded-xl p-3 border border-[#d4b982]/15">
-          <div class="text-xs font-semibold text-[#d4b982] mb-2 flex items-center justify-between">
+        <div class="bg-[#070b14]/65 rounded-xl p-3 border border-[#d4af37]/18">
+          <div class="text-xs font-semibold text-[#e6c675] mb-2 flex items-center justify-between">
             <span>마담 드파르주</span>
             <span class="text-[10px] text-slate-400 font-normal">Mme. Defarge</span>
           </div>
@@ -323,8 +327,8 @@
         </div>
 
         <!-- 미스 프로스 -->
-        <div class="bg-[#080d16]/60 rounded-xl p-3 border border-[#d4b982]/15">
-          <div class="text-xs font-semibold text-[#d4b982] mb-2 flex items-center justify-between">
+        <div class="bg-[#070b14]/65 rounded-xl p-3 border border-[#d4af37]/18">
+          <div class="text-xs font-semibold text-[#e6c675] mb-2 flex items-center justify-between">
             <span>미스 프로스</span>
             <span class="text-[10px] text-slate-400 font-normal">Miss Pross</span>
           </div>
@@ -335,14 +339,17 @@
         </div>
       </div>
 
-      <!-- 세부 조건 필터 (월별 / 찜 / 첫공 / 요일 / 시간대) -->
-      <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-[#d4b982]/15 text-xs">
+      <!-- 세부 조건 필터 (찜 / 첫공 / 전관·휴연 숨김 / 월별 / 시간대 / 요일) -->
+      <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-[#d4af37]/15 text-xs">
         <!-- 특수 필터 -->
         <button type="button" id="chip-picked" class="filter-chip px-3 py-1.5 rounded-full flex items-center gap-1.5" onclick="toggleSpecialFilter('picked')">
-          <i class="fa-solid fa-star text-[#d4b982]"></i> 내 찜만 보기
+          <i class="fa-solid fa-star text-[#d4af37]"></i> 내 찜만 보기
         </button>
         <button type="button" id="chip-first" class="filter-chip px-3 py-1.5 rounded-full flex items-center gap-1.5" onclick="toggleSpecialFilter('first')">
-          <span class="bg-[#d4b982] text-[#080d16] text-[9px] font-extrabold px-1 rounded">첫공</span> 첫공 포함 회차
+          <span class="bg-[#d4af37] text-[#070b14] text-[9px] font-extrabold px-1 rounded">첫공</span> 첫공 포함
+        </button>
+        <button type="button" id="chip-hide-inactive" class="filter-chip px-3 py-1.5 rounded-full flex items-center gap-1.5" onclick="toggleSpecialFilter('hideInactive')">
+          <i class="fa-regular fa-eye-slash text-[#d4af37]"></i> 전관/공연없음 숨기기
         </button>
 
         <span class="text-slate-600 mx-1 hidden sm:inline">|</span>
@@ -367,27 +374,31 @@
 
         <span class="text-slate-600 mx-1 hidden sm:inline">|</span>
 
-        <!-- 요일 필터 -->
-        <div class="flex items-center gap-1">
+        <!-- 요일별 세부 필터 -->
+        <div class="flex items-center gap-1 flex-wrap">
           <button type="button" class="filter-chip day-chip active px-2.5 py-1.5 rounded-full" data-day="ALL" onclick="setDayFilter('ALL', this)">전체 요일</button>
-          <button type="button" class="filter-chip day-chip px-2.5 py-1.5 rounded-full" data-day="WEEKDAY" onclick="setDayFilter('WEEKDAY', this)">평일(화~금)</button>
-          <button type="button" class="filter-chip day-chip px-2.5 py-1.5 rounded-full" data-day="WEEKEND" onclick="setDayFilter('WEEKEND', this)">주말/공휴일</button>
+          <button type="button" class="filter-chip day-chip px-2 py-1.5 rounded-full" data-day="화" onclick="setDayFilter('화', this)">화</button>
+          <button type="button" class="filter-chip day-chip px-2 py-1.5 rounded-full" data-day="수" onclick="setDayFilter('수', this)">수</button>
+          <button type="button" class="filter-chip day-chip px-2 py-1.5 rounded-full" data-day="목" onclick="setDayFilter('목', this)">목</button>
+          <button type="button" class="filter-chip day-chip px-2 py-1.5 rounded-full" data-day="금" onclick="setDayFilter('금', this)">금</button>
+          <button type="button" class="filter-chip day-chip px-2 py-1.5 rounded-full text-sky-400" data-day="토" onclick="setDayFilter('토', this)">토</button>
+          <button type="button" class="filter-chip day-chip px-2 py-1.5 rounded-full text-[#d96b6b]" data-day="일" onclick="setDayFilter('일', this)">일</button>
         </div>
       </div>
     </section>
 
     <!-- 스케줄 출력 영역 (PNG 캡처 대상 영역) -->
-    <div id="capture-area" class="glass-panel rounded-2xl overflow-hidden p-3 sm:p-6">
+    <div id="capture-area" class="glass-panel rounded-2xl overflow-hidden p-3 sm:p-6 mb-6">
       <!-- 캡처 시 함께 보이는 미니 타이틀 헤더 -->
-      <div class="flex items-center justify-between pb-4 mb-4 border-b border-[#d4b982]/25">
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-[#d4af37]/25">
         <div>
-          <span class="font-serif-title text-[11px] tracking-[0.25em] text-[#d4b982] block">CASTING SCHEDULE</span>
-          <h3 class="font-serif-kr text-base sm:text-xl font-bold text-white" id="schedule-subtitle">전체 공연 일정</h3>
+          <span class="font-serif-title text-[11px] tracking-[0.25em] text-[#d4af37] block">CASTING SCHEDULE</span>
+          <h3 class="font-serif-kr text-base sm:text-xl font-bold text-white" id="schedule-subtitle">전체 공연 일정 (2026.11.11 ~ 2027.02.08)</h3>
         </div>
         <div class="flex items-center gap-3">
-          <!-- 뷰 모드 전환 버튼 (모바일/데스크톱 자유 전환) -->
-          <div class="flex bg-[#070b12] p-1 rounded-lg border border-[#d4b982]/25" data-html2canvas-ignore="true">
-            <button id="btn-view-table" onclick="setViewMode('table')" class="px-2.5 py-1 rounded text-xs font-medium bg-[#d4b982] text-[#070b12] transition" title="표 보기">
+          <!-- 뷰 모드 전환 버튼 -->
+          <div class="flex bg-[#070b14] p-1 rounded-lg border border-[#d4af37]/25" data-html2canvas-ignore="true">
+            <button id="btn-view-table" onclick="setViewMode('table')" class="px-2.5 py-1 rounded text-xs font-medium bg-[#d4af37] text-[#070b14] transition" title="표 보기">
               <i class="fa-solid fa-table-list"></i> <span class="hidden sm:inline ml-1">테이블</span>
             </button>
             <button id="btn-view-card" onclick="setViewMode('card')" class="px-2.5 py-1 rounded text-xs font-medium text-slate-300 hover:text-white transition" title="카드 보기">
@@ -399,10 +410,10 @@
 
       <!-- 빈 검색 결과 안내 -->
       <div id="empty-state" class="hidden py-16 text-center">
-        <i class="fa-regular fa-calendar-xmark text-4xl text-[#d4b982]/50 mb-3"></i>
+        <i class="fa-regular fa-calendar-xmark text-4xl text-[#d4af37]/50 mb-3"></i>
         <p class="text-slate-300 font-medium mb-1">선택한 조건에 일치하는 공연 회차가 없습니다.</p>
         <p class="text-xs text-slate-400 mb-4">다른 배우 조합을 선택하거나 필터를 초기화해 보세요.</p>
-        <button onclick="resetAllFilters()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-[#d4b982] text-[#070b12]">
+        <button onclick="resetAllFilters()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-[#d4af37] text-[#070b14]">
           필터 초기화
         </button>
       </div>
@@ -411,7 +422,7 @@
       <div id="table-view-wrapper" class="overflow-x-auto">
         <table class="w-full text-center border-collapse min-w-[640px]">
           <thead>
-            <tr class="border-b border-[#d4b982]/40 text-xs sm:text-sm text-[#d4b982] bg-[#080d16]/80">
+            <tr class="border-b border-[#d4af37]/40 text-xs sm:text-sm text-[#e6c675] bg-[#070b14]/85">
               <th class="py-3 px-2 w-12 font-semibold">찜</th>
               <th class="py-3 px-3 font-semibold text-left sm:text-center">일정</th>
               <th class="py-3 px-2 font-semibold">시드니 칼튼</th>
@@ -421,33 +432,59 @@
               <th class="py-3 px-2 font-semibold">미스 프로스</th>
             </tr>
           </thead>
-          <tbody id="schedule-tbody" class="divide-y divide-[#d4b982]/15 text-xs sm:text-sm">
+          <tbody id="schedule-tbody" class="divide-y divide-[#d4af37]/15 text-xs sm:text-sm">
             <!-- JS 동적 렌더링 -->
           </tbody>
         </table>
       </div>
 
-      <!-- 2) 카드 뷰 (모바일 최적화 및 한눈에 보기) -->
+      <!-- 2) 카드 뷰 -->
       <div id="card-view-wrapper" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <!-- JS 동적 렌더링 -->
       </div>
 
       <!-- 포스터 하단 워터마크 -->
-      <div class="mt-6 pt-4 border-t border-[#d4b982]/15 text-center">
-        <p class="font-serif-title text-[10px] tracking-[0.3em] text-[#d4b982]/70 uppercase">MUSICAL</p>
+      <div class="mt-6 pt-4 border-t border-[#d4af37]/15 text-center">
+        <p class="font-serif-title text-[10px] tracking-[0.3em] text-[#d4af37]/75 uppercase">MUSICAL</p>
         <p class="font-serif-kr text-sm sm:text-base font-bold tracking-[0.2em] text-slate-200/90">두 도시 이야기</p>
       </div>
     </div>
+
+    <!-- 하단 '내 픽 요약 & 내보내기' 패널 -->
+    <section id="my-pick-summary" class="glass-panel rounded-2xl p-4 sm:p-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-[#d4af37]/20">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-star text-[#d4af37]"></i>
+          <h2 class="font-serif-kr font-bold text-base sm:text-lg text-[#e6c675]">내 픽 요약 &amp; 내보내기</h2>
+          <span id="summary-pick-badge" class="text-xs px-2.5 py-0.5 rounded-full bg-[#d4af37]/20 text-[#e6c675] font-semibold">0회 선택</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="clearAllPicks()" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-red-950/50 hover:bg-red-900/60 text-red-300 border border-red-500/30 transition">
+            <i class="fa-regular fa-trash-can mr-1"></i>찜 전체 비우기
+          </button>
+          <button onclick="copyPicksToClipboard()" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-[#121e33] hover:bg-[#1a2b47] text-slate-200 border border-[#d4af37]/30 transition">
+            <i class="fa-regular fa-copy mr-1 text-[#d4af37]"></i>텍스트 복사
+          </button>
+          <button onclick="exportScheduleAsPNG()" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#d4af37] hover:bg-[#e6c675] text-[#070b14] transition">
+            <i class="fa-solid fa-download mr-1"></i>이미지 저장
+          </button>
+        </div>
+      </div>
+
+      <div id="picked-summary-body">
+        <!-- JS 동적 렌더링 -->
+      </div>
+    </section>
 
   </div>
 
   <!-- 출연 횟수 통계 모달 -->
   <div id="stats-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4">
-    <div class="glass-panel rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-[#d4b982]/40">
-      <div class="flex items-center justify-between p-4 sm:p-5 border-b border-[#d4b982]/20 bg-[#080d16]/80">
+    <div class="glass-panel rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-[#d4af37]/40">
+      <div class="flex items-center justify-between p-4 sm:p-5 border-b border-[#d4af37]/20 bg-[#070b14]/85">
         <div>
-          <h3 class="font-serif-kr text-lg font-bold text-[#f3e5ab]">출연 회차 통계 분석</h3>
-          <p class="text-xs text-slate-400 mt-0.5" id="stats-modal-desc">전체 68회(전관 1회 제외) 기준 배우별 출연 횟수</p>
+          <h3 class="font-serif-kr text-lg font-bold text-[#e6c675]">출연 회차 통계 분석</h3>
+          <p class="text-xs text-slate-400 mt-0.5" id="stats-modal-desc">전체 공개 공연 기준 배우별 출연 횟수</p>
         </div>
         <button onclick="closeStatsModal()" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/15 text-slate-300 flex items-center justify-center">
           <i class="fa-solid fa-xmark"></i>
@@ -456,7 +493,7 @@
       
       <!-- 통계 기준 탭 -->
       <div class="flex gap-2 px-5 pt-4">
-        <button id="tab-stat-all" onclick="renderActorStats('ALL')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#d4b982] text-[#070b12]">전체 시즌 (68회)</button>
+        <button id="tab-stat-all" onclick="renderActorStats('ALL')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#d4af37] text-[#070b14]">전체 공개 회차</button>
         <button id="tab-stat-filtered" onclick="renderActorStats('FILTERED')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 text-slate-300 hover:bg-white/10">현재 필터 결과</button>
         <button id="tab-stat-picked" onclick="renderActorStats('PICKED')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 text-slate-300 hover:bg-white/10">내 찜 목록 기준</button>
       </div>
@@ -469,8 +506,8 @@
 
   <!-- 토스트 메시지 박스 (alert 대신 사용) -->
   <div id="toast-box" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 hidden">
-    <div class="bg-[#111c2e] border border-[#d4b982] text-[#f3e5ab] px-5 py-3 rounded-full shadow-2xl text-xs sm:text-sm font-medium flex items-center gap-2 toast-animate">
-      <i class="fa-solid fa-sparkles text-[#d4b982]"></i>
+    <div class="bg-[#0d1526] border border-[#d4af37] text-[#e6c675] px-5 py-3 rounded-full shadow-2xl text-xs sm:text-sm font-medium flex items-center gap-2 toast-animate">
+      <i class="fa-solid fa-sparkles text-[#d4af37]"></i>
       <span id="toast-message">알림 메시지</span>
     </div>
   </div>
@@ -478,21 +515,95 @@
   <script>
     /**
      * 뮤지컬 '두 도시 이야기' 공식 캐스팅 스케줄 전체 데이터
-     * 전체 공연 기간: 2026.11.11 ~ 2027.02.08
-     * 현재 공개된 1~3차 회차: 2026.11.11 ~ 2027.01.03 (총 74개 일정 행: 일반 공연 68회 + 전관 1회 + 공연없음 5회 = 공연 회차 69회)
+     * 전체 공연 기간: 2026.11.11 (WED) ~ 2027.02.08 (MON)
+     * 현재 공개된 1~3차 회차: 2026.11.11 ~ 2027.01.03 (총 75개 일정 행: 일반 공연 69회 + 전관 1회 + 공연없음 5회)
      *
-     * [추후 1월 4일 ~ 2월 8일 추가 스케줄 입력 가이드]
-     * 아래 배열의 맨 끝('0103-1400' 객체 다음)에 동일한 형식으로 객체를 추가하세요.
+     * =========================================================================
+     * [추후 2027년 1월 4일 ~ 2월 8일 티켓 오픈 시 데이터 추가 방법]
+     * 아래 배열의 맨 끝('0103-1400' 객체 다음)에 쉼표(,)를 찍고 동일한 형식으로 추가하세요.
      * - 일반 공연 예시:
      *   { id: '0105-1930', month: 1, date: '1월 5일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
      * - 공휴일(설 연휴 등 붉은 날짜 표기)인 경우 `isHoliday: true` 속성을 추가하세요.
      * - 휴연일('공연 없음') 예시:
      *   { id: '0104-NONE', month: 1, date: '1월 4일', day: '월', time: '', period: 'NONE', status: 'NONE', note: '공연 없음' },
+     * =========================================================================
      */
     const SCHEDULE_DATA = [
-      // [11월]
-// ... existing code ... -->
-      // [1월]
+      // [11월] (26개 행)
+      { id: '1111-1930', month: 11, date: '11월 11일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: ['carton', 'darnay', 'lucie', 'defarge', 'pross'] },
+      { id: '1112-1930', month: 11, date: '11월 12일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: ['carton', 'darnay', 'lucie', 'defarge', 'pross'] },
+      { id: '1113-1930', month: 11, date: '11월 13일', day: '금', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '노윤', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: ['darnay', 'lucie'] },
+      { id: '1114-1400', month: 11, date: '11월 14일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '선민', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1114-1900', month: 11, date: '11월 14일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '이지혜', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1115-1400', month: 11, date: '11월 15일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1116-NONE', month: 11, date: '11월 16일', day: '월', time: '', period: 'NONE', status: 'NONE', note: '공연 없음' },
+      { id: '1117-1930', month: 11, date: '11월 17일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '선민', defarge: '이영미', pross: '나유진' }, first: ['carton'] },
+      { id: '1118-1430', month: 11, date: '11월 18일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1118-1930', month: 11, date: '11월 18일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '이지혜', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1119-1930', month: 11, date: '11월 19일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '노윤', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1120-1930', month: 11, date: '11월 20일', day: '금', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '백형훈', lucie: '김수연', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1121-1400', month: 11, date: '11월 21일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1121-1900', month: 11, date: '11월 21일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '김수연', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1122-1400', month: 11, date: '11월 22일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '백형훈', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1122-1900', month: 11, date: '11월 22일', day: '일', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1124-1930', month: 11, date: '11월 24일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '선민', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1125-1430', month: 11, date: '11월 25일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '고은성', darnay: '백형훈', lucie: '이지혜', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1125-1930', month: 11, date: '11월 25일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '김수연', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1126-1930', month: 11, date: '11월 26일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1127-1930', month: 11, date: '11월 27일', day: '금', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1128-1400', month: 11, date: '11월 28일', day: '토', time: '2:00', period: 'MATINEE', status: 'PRIVATE', note: '전 관' },
+      { id: '1128-1900', month: 11, date: '11월 28일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1129-1400', month: 11, date: '11월 29일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1129-1900', month: 11, date: '11월 29일', day: '일', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1130-NONE', month: 11, date: '11월 30일', day: '월', time: '', period: 'NONE', status: 'NONE', note: '공연 없음' },
+
+      // [12월] (44개 행)
+      { id: '1201-1930', month: 12, date: '12월 1일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '백형훈', lucie: '김수연', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1202-1430', month: 12, date: '12월 2일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '선민', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1202-1930', month: 12, date: '12월 2일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '이지혜', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1203-1930', month: 12, date: '12월 3일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '선민', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1204-1930', month: 12, date: '12월 4일', day: '금', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '김수연', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1205-1400', month: 12, date: '12월 5일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1205-1900', month: 12, date: '12월 5일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1206-1400', month: 12, date: '12월 6일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1206-1900', month: 12, date: '12월 6일', day: '일', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '김수연', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1207-NONE', month: 12, date: '12월 7일', day: '월', time: '', period: 'NONE', status: 'NONE', note: '공연 없음' },
+      { id: '1208-1930', month: 12, date: '12월 8일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '백형훈', lucie: '이지혜', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1209-1430', month: 12, date: '12월 9일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1209-1930', month: 12, date: '12월 9일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '노윤', lucie: '선민', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1210-1930', month: 12, date: '12월 10일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '이지혜', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1211-1930', month: 12, date: '12월 11일', day: '금', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '선민', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1212-1400', month: 12, date: '12월 12일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1212-1900', month: 12, date: '12월 12일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '이지혜', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1213-1400', month: 12, date: '12월 13일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '선민', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1213-1900', month: 12, date: '12월 13일', day: '일', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '김수연', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1215-1930', month: 12, date: '12월 15일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1216-1430', month: 12, date: '12월 16일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '김수연', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1216-1930', month: 12, date: '12월 16일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '이지혜', defarge: '이영미', pross: '나유진' }, first: [] },
+      { id: '1217-1930', month: 12, date: '12월 17일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1218-1930', month: 12, date: '12월 18일', day: '금', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '김수연', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1219-1400', month: 12, date: '12월 19일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1219-1900', month: 12, date: '12월 19일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '김수연', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1220-1400', month: 12, date: '12월 20일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '고은성', darnay: '백형훈', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1220-1900', month: 12, date: '12월 20일', day: '일', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '진태화', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1221-NONE', month: 12, date: '12월 21일', day: '월', time: '', period: 'NONE', status: 'NONE', note: '공연 없음' },
+      { id: '1222-1930', month: 12, date: '12월 22일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '김수연', defarge: '김소향', pross: '최나래' }, first: [] },
+      { id: '1223-1430', month: 12, date: '12월 23일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1223-1930', month: 12, date: '12월 23일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1224-1930', month: 12, date: '12월 24일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1225-1400', month: 12, date: '12월 25일', day: '금', time: '2:00', period: 'MATINEE', isHoliday: true, status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '김수연', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1225-1900', month: 12, date: '12월 25일', day: '금', time: '7:00', period: 'EVENING', isHoliday: true, status: 'OPEN', cast: { carton: '카이', darnay: '백형훈', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1226-1400', month: 12, date: '12월 26일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '이지혜', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1226-1900', month: 12, date: '12월 26일', day: '토', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '백형훈', lucie: '김수연', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1227-1400', month: 12, date: '12월 27일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '노윤', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1227-1900', month: 12, date: '12월 27일', day: '일', time: '7:00', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '선민', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1228-NONE', month: 12, date: '12월 28일', day: '월', time: '', period: 'NONE', status: 'NONE', note: '공연 없음' },
+      { id: '1229-1930', month: 12, date: '12월 29일', day: '화', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '백형훈', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
+      { id: '1230-1430', month: 12, date: '12월 30일', day: '수', time: '2:30', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '진태화', lucie: '김수연', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1230-1930', month: 12, date: '12월 30일', day: '수', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '고은성', darnay: '노윤', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
+      { id: '1231-1930', month: 12, date: '12월 31일', day: '목', time: '7:30', period: 'EVENING', status: 'OPEN', cast: { carton: '카이', darnay: '백형훈', lucie: '선민', defarge: '김소향', pross: '최나래' }, first: [] },
+
+      // [1월] (5개 행)
       { id: '0101-1400', month: 1, date: '1월 1일', day: '금', time: '2:00', period: 'MATINEE', isHoliday: true, status: 'OPEN', cast: { carton: '고은성', darnay: '진태화', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] },
       { id: '0101-1900', month: 1, date: '1월 1일', day: '금', time: '7:00', period: 'EVENING', isHoliday: true, status: 'OPEN', cast: { carton: '신성록', darnay: '백형훈', lucie: '김수연', defarge: '김소향', pross: '나유진' }, first: [] },
       { id: '0102-1400', month: 1, date: '1월 2일', day: '토', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '카이', darnay: '노윤', lucie: '선민', defarge: '이영미', pross: '최나래' }, first: [] },
@@ -500,24 +611,366 @@
       { id: '0103-1400', month: 1, date: '1월 3일', day: '일', time: '2:00', period: 'MATINEE', status: 'OPEN', cast: { carton: '신성록', darnay: '노윤', lucie: '이지혜', defarge: '김소향', pross: '나유진' }, first: [] }
 
       // =========================================================================
-      // [추가 예정 구역] 2027년 1월 4일 ~ 2월 8일 스케줄 공개 시 아래에 이어서 붙여넣기
+      // [추가 예정 구역] 2027년 1월 4일 ~ 2월 8일 스케줄 공개 시 위 0103-1400 뒤에 쉼표(,) 후 추가
       // =========================================================================
     ];
 
     const ROLES_META = [
-// ... existing code ... -->
-      const subtitleEl = document.getElementById('schedule-subtitle');
-      subtitleEl.textContent = parts.length > 0 ? `CAST PICK · ${parts.join(' · ')}` : '전체 공연 일정 (2026.11.11 ~ 2027.02.08)';
+      { key: 'carton', label: '시드니 칼튼', actors: ['신성록', '카이', '고은성'] },
+      { key: 'darnay', label: '찰스 다네이', actors: ['백형훈', '진태화', '노윤'] },
+      { key: 'lucie', label: '루시 마네뜨', actors: ['선민', '이지혜', '김수연'] },
+      { key: 'defarge', label: '마담 드파르주', actors: ['이영미', '김소향'] },
+      { key: 'pross', label: '미스 프로스', actors: ['최나래', '나유진'] }
+    ];
+
+    // 애플리케이션 상태 관리
+    const state = {
+      selectedActors: {
+        carton: new Set(),
+        darnay: new Set(),
+        lucie: new Set(),
+        defarge: new Set(),
+        pross: new Set()
+      },
+      pickedOnly: false,
+      firstOnly: false,
+      hideInactive: false,
+      month: 'ALL',
+      time: 'ALL',
+      day: 'ALL',
+      viewMode: window.innerWidth < 640 ? 'card' : 'table',
+      pickedIds: new Set()
+    };
+
+    const STORAGE_KEY = 'tale_of_two_cities_picks_v1';
+
+    // LocalStorage에서 찜 목록 불러오기
+    function loadPicks() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const arr = JSON.parse(saved);
+          if (Array.isArray(arr)) {
+            state.pickedIds = new Set(arr);
+          }
+        }
+      } catch (e) {
+        console.warn('저장된 찜 목록을 불러오는 중 오류가 발생했습니다.', e);
+      }
     }
 
-    // 스케줄 렌더링 (테이블 & 카드 동시 업데이트)
+    // LocalStorage에 찜 목록 저장하기
+    function savePicks() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify([...state.pickedIds]));
+      } catch (e) {
+        console.warn('찜 목록 저장 실패:', e);
+      }
+    }
+
+    // 토스트 알림 표시
+    let toastTimer = null;
+    function showToast(msg) {
+      const box = document.getElementById('toast-box');
+      const text = document.getElementById('toast-message');
+      text.textContent = msg;
+      box.classList.remove('hidden');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        box.classList.add('hidden');
+      }, 2800);
+    }
+
+    // 배우 토글 필터
+    function toggleActor(role, actor, btnEl) {
+      const set = state.selectedActors[role];
+      if (set.has(actor)) {
+        set.delete(actor);
+        btnEl.classList.remove('active');
+      } else {
+        set.add(actor);
+        btnEl.classList.add('active');
+      }
+      renderSchedule();
+    }
+
+    // 특수 필터 토글 (찜만 보기 / 첫공 포함 / 전관·공연없음 숨기기)
+    function toggleSpecialFilter(type) {
+      if (type === 'picked') {
+        state.pickedOnly = !state.pickedOnly;
+        document.getElementById('chip-picked').classList.toggle('active', state.pickedOnly);
+      } else if (type === 'first') {
+        state.firstOnly = !state.firstOnly;
+        document.getElementById('chip-first').classList.toggle('active', state.firstOnly);
+      } else if (type === 'hideInactive') {
+        state.hideInactive = !state.hideInactive;
+        document.getElementById('chip-hide-inactive').classList.toggle('active', state.hideInactive);
+      }
+      renderSchedule();
+    }
+
+    function togglePickOnlyFilter() {
+      toggleSpecialFilter('picked');
+    }
+
+    // 월별 필터
+    function setMonthFilter(monthVal, btnEl) {
+      state.month = monthVal;
+      document.querySelectorAll('.month-chip').forEach(el => el.classList.remove('active'));
+      btnEl.classList.add('active');
+      renderSchedule();
+    }
+
+    // 시간대 필터
+    function setTimeFilter(timeVal, btnEl) {
+      state.time = timeVal;
+      document.querySelectorAll('.time-chip').forEach(el => el.classList.remove('active'));
+      btnEl.classList.add('active');
+      renderSchedule();
+    }
+
+    // 요일 필터
+    function setDayFilter(dayVal, btnEl) {
+      state.day = dayVal;
+      document.querySelectorAll('.day-chip').forEach(el => el.classList.remove('active'));
+      btnEl.classList.add('active');
+      renderSchedule();
+    }
+
+    // 전체 필터 초기화
+    function resetAllFilters() {
+      Object.values(state.selectedActors).forEach(s => s.clear());
+      document.querySelectorAll('.actor-btn').forEach(btn => btn.classList.remove('active'));
+
+      state.pickedOnly = false;
+      state.firstOnly = false;
+      state.hideInactive = false;
+      document.getElementById('chip-picked').classList.remove('active');
+      document.getElementById('chip-first').classList.remove('active');
+      document.getElementById('chip-hide-inactive').classList.remove('active');
+
+      state.month = 'ALL';
+      document.querySelectorAll('.month-chip').forEach(el => el.classList.toggle('active', el.dataset.month === 'ALL'));
+
+      state.time = 'ALL';
+      document.querySelectorAll('.time-chip').forEach(el => el.classList.toggle('active', el.dataset.time === 'ALL'));
+
+      state.day = 'ALL';
+      document.querySelectorAll('.day-chip').forEach(el => el.classList.toggle('active', el.dataset.day === 'ALL'));
+
+      renderSchedule();
+      showToast('모든 필터가 초기화되었습니다.');
+    }
+
+    // 뷰 모드 전환 (테이블 <-> 카드)
+    function setViewMode(mode) {
+      state.viewMode = mode;
+      const tableWrapper = document.getElementById('table-view-wrapper');
+      const cardWrapper = document.getElementById('card-view-wrapper');
+      const btnTable = document.getElementById('btn-view-table');
+      const btnCard = document.getElementById('btn-view-card');
+
+      if (mode === 'table') {
+        tableWrapper.classList.remove('hidden');
+        cardWrapper.classList.add('hidden');
+        btnTable.classList.add('bg-[#d4af37]', 'text-[#070b14]');
+        btnTable.classList.remove('text-slate-300');
+        btnCard.classList.remove('bg-[#d4af37]', 'text-[#070b14]');
+        btnCard.classList.add('text-slate-300');
+      } else {
+        tableWrapper.classList.add('hidden');
+        cardWrapper.classList.remove('hidden');
+        btnCard.classList.add('bg-[#d4af37]', 'text-[#070b14]');
+        btnCard.classList.remove('text-slate-300');
+        btnTable.classList.remove('bg-[#d4af37]', 'text-[#070b14]');
+        btnTable.classList.add('text-slate-300');
+      }
+    }
+
+    // 찜 토글
+    function togglePick(id, event) {
+      if (event) event.stopPropagation();
+      const item = SCHEDULE_DATA.find(s => s.id === id);
+      if (!item || item.status !== 'OPEN') return;
+
+      if (state.pickedIds.has(id)) {
+        state.pickedIds.delete(id);
+      } else {
+        state.pickedIds.add(id);
+      }
+      savePicks();
+      renderSchedule();
+    }
+
+    // 찜 전체 비우기
+    function clearAllPicks() {
+      if (state.pickedIds.size === 0) {
+        showToast('비울 찜 목록이 없습니다.');
+        return;
+      }
+      state.pickedIds.clear();
+      savePicks();
+      renderSchedule();
+      showToast('내 찜 목록을 모두 비웠습니다.');
+    }
+
+    // 활성화된 배우 필터가 있는지 확인
+    function hasAnyActorFilter() {
+      return Object.values(state.selectedActors).some(set => set.size > 0);
+    }
+
+    // 필터링 로직
+    function getFilteredSchedules() {
+      const actorFiltering = hasAnyActorFilter();
+
+      return SCHEDULE_DATA.filter(item => {
+        // 월별 필터
+        if (state.month !== 'ALL' && String(item.month) !== state.month) return false;
+
+        // 요일 필터
+        if (state.day !== 'ALL' && item.day !== state.day) return false;
+
+        // 전관/공연없음 숨기기 토글
+        if (state.hideInactive && item.status !== 'OPEN') return false;
+
+        // 일반 공연이 아닌 경우(전관/공연없음): 배우/찜/첫공/시간대 세부 필터가 켜져 있으면 숨김
+        if (item.status !== 'OPEN') {
+          if (actorFiltering || state.pickedOnly || state.firstOnly || state.time !== 'ALL') {
+            return false;
+          }
+          return true;
+        }
+
+        // 찜만 보기
+        if (state.pickedOnly && !state.pickedIds.has(item.id)) return false;
+
+        // 첫공 포함
+        if (state.firstOnly && (!item.first || item.first.length === 0)) return false;
+
+        // 시간대 필터
+        if (state.time !== 'ALL' && item.period !== state.time) return false;
+
+        // 역할별 다중 배우 필터 (역할 내 OR, 역할 간 AND)
+        for (const roleKey of Object.keys(state.selectedActors)) {
+          const selectedSet = state.selectedActors[roleKey];
+          if (selectedSet.size > 0) {
+            const castName = item.cast[roleKey];
+            if (!selectedSet.has(castName)) return false;
+          }
+        }
+
+        return true;
+      });
+    }
+
+    // 날짜 색상 클래스 (포스터 스타일 반영: 토요일 하늘색, 일요일/공휴일 #d96b6b)
+    function getDateColorClass(item) {
+      if (item.isHoliday || item.day === '일') return 'text-[#d96b6b]';
+      if (item.day === '토') return 'text-sky-400';
+      return 'text-slate-100';
+    }
+
+    // 배우 셀 HTML 포맷팅 (하이라이트 + 첫공 뱃지)
+    function formatActorHtml(item, roleKey) {
+      const name = item.cast[roleKey];
+      const isSelected = state.selectedActors[roleKey].has(name);
+      const isFirst = item.first && item.first.includes(roleKey);
+      const badge = isFirst ? `<span class="badge-first">첫공</span>` : '';
+      return `<span class="${isSelected ? 'actor-highlight' : 'text-slate-200'}">${name}</span>${badge}`;
+    }
+
+    // 상단 부제목 동적 업데이트
+    function updateSubtitle() {
+      const parts = [];
+      ROLES_META.forEach(r => {
+        const selected = [...state.selectedActors[r.key]];
+        if (selected.length > 0) {
+          parts.push(selected.join('/'));
+        }
+      });
+      if (state.pickedOnly) parts.push('내 찜 목록');
+      if (state.firstOnly) parts.push('첫공 회차');
+      if (state.month !== 'ALL') parts.push(`${state.month}월`);
+      if (state.day !== 'ALL') parts.push(`${state.day}요일`);
+      if (state.time === 'MATINEE') parts.push('낮공');
+      if (state.time === 'EVENING') parts.push('밤공');
+
+      const subtitleEl = document.getElementById('schedule-subtitle');
+      subtitleEl.textContent = parts.length > 0
+        ? `CAST PICK · ${parts.join(' · ')}`
+        : '전체 공연 일정 (2026.11.11 ~ 2027.02.08)';
+    }
+
+    // 하단 '내 픽 요약 & 내보내기' 패널 렌더링
+    function renderPickSummary() {
+      const pickedShows = SCHEDULE_DATA.filter(i => i.status === 'OPEN' && state.pickedIds.has(i.id));
+      document.getElementById('summary-pick-badge').textContent = `${pickedShows.length}회 선택`;
+      const bodyEl = document.getElementById('picked-summary-body');
+
+      if (pickedShows.length === 0) {
+        bodyEl.innerHTML = `
+          <div class="text-center py-8 text-xs sm:text-sm text-slate-400 bg-[#070b14]/50 rounded-xl border border-dashed border-[#d4af37]/20">
+            위 스케줄 표에서 원하는 회차의 행이나 <i class="fa-regular fa-star text-[#d4af37]"></i> 버튼을 눌러 관극 예정 회차를 찜해 보세요.
+          </div>
+        `;
+        return;
+      }
+
+      // 배우별 관람 예정 횟수 집계
+      const actorCounts = {};
+      pickedShows.forEach(show => {
+        Object.values(show.cast).forEach(actor => {
+          actorCounts[actor] = (actorCounts[actor] || 0) + 1;
+        });
+      });
+
+      const sortedActors = Object.entries(actorCounts).sort((a, b) => b[1] - a[1]);
+      const actorPillsHtml = sortedActors.map(([actor, count]) => `
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs bg-[#070b14]/80 border border-[#d4af37]/25 text-slate-200">
+          <span>${actor}</span>
+          <strong class="text-[#e6c675]">${count}회</strong>
+        </span>
+      `).join('');
+
+      const listHtml = pickedShows.map(item => {
+        const c = item.cast;
+        const dateColor = getDateColorClass(item);
+        return `
+          <div class="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-[#070b14]/70 border border-[#d4af37]/20 text-xs">
+            <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span class="font-bold ${dateColor}">${item.date}(${item.day}) ${item.time}</span>
+              <span class="text-slate-500">|</span>
+              <span class="text-slate-200">${c.carton} · ${c.darnay} · ${c.lucie} · ${c.defarge} · ${c.pross}</span>
+            </div>
+            <button type="button" onclick="togglePick('${item.id}')" class="text-slate-400 hover:text-red-400 px-1.5 py-0.5" title="찜 해제">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        `;
+      }).join('');
+
+      bodyEl.innerHTML = `
+        <div class="mb-4">
+          <div class="text-xs text-slate-400 mb-2">내 찜 목록 배우별 관람 횟수</div>
+          <div class="flex flex-wrap gap-1.5">${actorPillsHtml}</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 max-h-60 overflow-y-auto pr-1">
+          ${listHtml}
+        </div>
+      `;
+    }
+
+    // 스케줄 렌더링 (테이블 & 카드 & 요약 동시 업데이트)
     function renderSchedule() {
       const filtered = getFilteredSchedules();
       const openShowsCount = filtered.filter(i => i.status === 'OPEN').length;
+      const totalOpenCount = SCHEDULE_DATA.filter(i => i.status === 'OPEN').length;
 
       document.getElementById('stat-matched').textContent = openShowsCount;
       document.getElementById('stat-picked').textContent = state.pickedIds.size;
+      document.getElementById('stat-total-open').textContent = totalOpenCount;
       updateSubtitle();
+      renderPickSummary();
 
       const tbody = document.getElementById('schedule-tbody');
       const cardWrapper = document.getElementById('card-view-wrapper');
@@ -536,13 +989,13 @@
         if (item.status === 'NONE' || item.status === 'PRIVATE') {
           const dateColor = getDateColorClass(item);
           return `
-            <tr class="bg-[#060910]/60 text-slate-500">
+            <tr class="bg-[#050810]/70 text-slate-500">
               <td class="py-3 px-2">-</td>
               <td class="py-3 px-3 font-medium text-left sm:text-center ${dateColor}">
                 ${item.date} <span class="ml-1">${item.day}</span>
                 ${item.time ? `<span class="text-slate-400 ml-2">${item.time}</span>` : ''}
               </td>
-              <td colspan="5" class="py-3 px-2 text-center tracking-widest text-xs font-medium ${item.status === 'PRIVATE' ? 'text-[#d4b982]/80' : 'text-slate-500'}">
+              <td colspan="5" class="py-3 px-2 text-center tracking-widest text-xs font-medium ${item.status === 'PRIVATE' ? 'text-[#e6c675]/85' : 'text-slate-500'}">
                 ${item.note}
               </td>
             </tr>
@@ -554,7 +1007,7 @@
         return `
           <tr onclick="togglePick('${item.id}')" class="schedule-row cursor-pointer ${isPicked ? 'picked' : ''}">
             <td class="py-3 px-2">
-              <button type="button" onclick="togglePick('${item.id}', event)" class="text-base transition transform active:scale-125 ${isPicked ? 'text-[#f3e5ab]' : 'text-slate-600 hover:text-[#d4b982]'}" aria-label="찜하기">
+              <button type="button" onclick="togglePick('${item.id}', event)" class="text-base transition transform active:scale-125 ${isPicked ? 'text-[#e6c675]' : 'text-slate-600 hover:text-[#d4af37]'}" aria-label="찜하기">
                 <i class="${isPicked ? 'fa-solid' : 'fa-regular'} fa-star"></i>
               </button>
             </td>
@@ -576,9 +1029,9 @@
       cardWrapper.innerHTML = filtered.map(item => {
         if (item.status === 'NONE' || item.status === 'PRIVATE') {
           return `
-            <div class="rounded-xl p-4 bg-[#070b12]/60 border border-white/5 flex items-center justify-between text-xs text-slate-500">
+            <div class="rounded-xl p-4 bg-[#070b14]/65 border border-white/5 flex items-center justify-between text-xs text-slate-500">
               <span class="${getDateColorClass(item)} font-medium">${item.date} (${item.day}) ${item.time}</span>
-              <span class="tracking-widest font-semibold ${item.status === 'PRIVATE' ? 'text-[#d4b982]' : ''}">${item.note}</span>
+              <span class="tracking-widest font-semibold ${item.status === 'PRIVATE' ? 'text-[#e6c675]' : ''}">${item.note}</span>
             </div>
           `;
         }
@@ -586,13 +1039,13 @@
         const isPicked = state.pickedIds.has(item.id);
         const dateColor = getDateColorClass(item);
         return `
-          <div onclick="togglePick('${item.id}')" class="rounded-xl p-4 cursor-pointer transition border ${isPicked ? 'bg-[#d4b982]/15 border-[#d4b982]' : 'bg-[#09101d]/80 border-[#d4b982]/20 hover:border-[#d4b982]/50'}">
-            <div class="flex items-center justify-between pb-2.5 mb-3 border-b border-[#d4b982]/15">
+          <div onclick="togglePick('${item.id}')" class="rounded-xl p-4 cursor-pointer transition border ${isPicked ? 'bg-[#d4af37]/15 border-[#e6c675]' : 'bg-[#09101f]/85 border-[#d4af37]/20 hover:border-[#d4af37]/50'}">
+            <div class="flex items-center justify-between pb-2.5 mb-3 border-b border-[#d4af37]/15">
               <div class="text-sm font-bold">
                 <span class="${dateColor}">${item.date} (${item.day})</span>
                 <span class="text-slate-300 font-medium ml-1.5">${item.time}</span>
               </div>
-              <button type="button" onclick="togglePick('${item.id}', event)" class="text-lg ${isPicked ? 'text-[#f3e5ab]' : 'text-slate-500'}">
+              <button type="button" onclick="togglePick('${item.id}', event)" class="text-lg ${isPicked ? 'text-[#e6c675]' : 'text-slate-500'}">
                 <i class="${isPicked ? 'fa-solid' : 'fa-regular'} fa-star"></i>
               </button>
             </div>
@@ -645,7 +1098,6 @@
 
       const fullText = `${headerTitle}\n${lines.join('\n')}`;
 
-      // iFrame 호환 execCommand 복사 방식 우선 사용
       const textarea = document.createElement('textarea');
       textarea.value = fullText;
       textarea.style.position = 'fixed';
@@ -670,7 +1122,7 @@
 
       try {
         const canvas = await html2canvas(captureEl, {
-          backgroundColor: '#090f19',
+          backgroundColor: '#070b14',
           scale: 2,
           useCORS: true,
           logging: false
@@ -702,11 +1154,10 @@
     }
 
     function renderActorStats(mode) {
-      // 탭 스타일 업데이트
       ['ALL', 'FILTERED', 'PICKED'].forEach(m => {
         const btn = document.getElementById(`tab-stat-${m.toLowerCase()}`);
         if (m === mode) {
-          btn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#d4b982] text-[#070b12]';
+          btn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#d4af37] text-[#070b14]';
         } else {
           btn.className = 'px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 text-slate-300 hover:bg-white/10';
         }
@@ -746,18 +1197,18 @@
             <div class="mb-2 last:mb-0">
               <div class="flex justify-between text-xs mb-1">
                 <span class="font-medium text-slate-200">${actor}</span>
-                <span class="text-[#f3e5ab] font-semibold">${count}회 <span class="text-slate-400 font-normal">(${pct}%)</span></span>
+                <span class="text-[#e6c675] font-semibold">${count}회 <span class="text-slate-400 font-normal">(${pct}%)</span></span>
               </div>
-              <div class="w-full h-2 bg-[#070b12] rounded-full overflow-hidden">
-                <div class="h-full bg-gradient-to-r from-[#b5924c] to-[#f3e5ab] rounded-full transition-all duration-300" style="width: ${barWidth}%"></div>
+              <div class="w-full h-2 bg-[#070b14] rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-[#b5924c] to-[#e6c675] rounded-full transition-all duration-300" style="width: ${barWidth}%"></div>
               </div>
             </div>
           `;
         }).join('');
 
         return `
-          <div class="bg-[#080d16]/70 border border-[#d4b982]/20 rounded-xl p-3.5">
-            <div class="text-xs font-bold text-[#d4b982] mb-2.5">${role.label}</div>
+          <div class="bg-[#070b14]/75 border border-[#d4af37]/20 rounded-xl p-3.5">
+            <div class="text-xs font-bold text-[#e6c675] mb-2.5">${role.label}</div>
             ${barsHtml}
           </div>
         `;
@@ -792,7 +1243,7 @@
           ctx.beginPath();
           ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
           ctx.fillStyle = s.isGold
-            ? `rgba(243, 229, 171, ${s.alpha})`
+            ? `rgba(230, 198, 117, ${s.alpha})`
             : `rgba(226, 232, 240, ${s.alpha * 0.85})`;
           ctx.fill();
         }
